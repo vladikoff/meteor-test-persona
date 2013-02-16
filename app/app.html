@@ -1,0 +1,23 @@
+<head>
+  <title>app</title>
+</head>
+
+<body>
+  {{> hello}}
+
+</body>
+
+<template name="hello">
+  Current: {{currentUser}} <br/>
+  <h1>Hello World!</h1>
+  <hr/>
+  {{loginButtons}}
+  {{greeting}}
+  <h1>Users</h1>
+  {{#each users}}
+  1.
+  {{_id}} <br/>
+  {{/each}}
+  <input type="button" class=click value="Click" />
+  <input type="button" class=logout value="logout" />
+</template>

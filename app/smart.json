@@ -1,0 +1,12 @@
+{
+  "meteor": {
+    "branch": "devel"
+  },
+  "packages": {
+    "accounts-persona": {
+      "path": "../../meteor-accounts-persona"
+    },
+    "moment": {},
+    "accounts-instagram": {}
+  }
+}
