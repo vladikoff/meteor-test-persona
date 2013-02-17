@@ -15,9 +15,10 @@
   {{greeting}}
   <h1>Users</h1>
   {{#each users}}
-  1.
   {{_id}} <br/>
   {{/each}}
   <input type="button" class=click value="Click" />
-  <input type="button" class=logout value="logout" />
+  {{#if currentUser}}
+    <input type="button" class=logout value="logout" />
+  {{/if}}
 </template>
