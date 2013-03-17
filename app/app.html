@@ -1,21 +1,31 @@
 <head>
   <title>app</title>
+  <script>
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'persona-lib';
+      t.src = '//login.persona.org/include.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
 </head>
 
 <body>
   {{> hello}}
-
 </body>
 
 <template name="hello">
-  Current: {{currentUser}} <br/>
-  <h1>Hello World!</h1>
+  Your Persona Email: {{currentUser.profile.email}} <br/>
+  <h1>This is a Meteor w/ Persona Tester</h1>
   <hr/>
   {{loginButtons}}
   {{greeting}}
   <h1>Users</h1>
   {{#each users}}
-  {{_id}} <br/>
+    {{_id}} <br/>
   {{/each}}
   <input type="button" class=click value="Click" />
   {{#if currentUser}}
