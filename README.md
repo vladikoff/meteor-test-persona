@@ -16,4 +16,3 @@ Note: `smart.json` locally loads this module
     }
   }
 ```
-
