@@ -18,17 +18,21 @@
 </body>
 
 <template name="hello">
-  Your Persona Email: {{currentUser.profile.email}} <br/>
-  <h1>This is a Meteor w/ Persona Tester</h1>
+  {{#if currentUser}}
+    Your Persona Email: {{currentUser.profile.email}} <br/>
+  {{/if}}
+
+  <h1>This is Meteor with Mozilla Persona</h1>
   <hr/>
   {{loginButtons}}
   {{greeting}}
-  <h1>Users</h1>
+  <h2>App Users</h2>
   {{#each users}}
     {{_id}} <br/>
   {{/each}}
-  <input type="button" class=click value="Click" />
   {{#if currentUser}}
     <input type="button" class=logout value="logout" />
+  {{else}}
+    <input type="button" class=login value="Login with your email!" />
   {{/if}}
 </template>

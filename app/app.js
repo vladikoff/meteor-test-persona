@@ -4,7 +4,7 @@ if (Meteor.isClient) {
   };
 
   Template.hello.events({
-    'click .click' : function () {
+    'click .login' : function () {
       Meteor.loginWithPersona({}, function() {
         console.log('logged in!');
       });

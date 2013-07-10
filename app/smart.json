@@ -6,7 +6,6 @@
     "accounts-persona": {
       "path": "../../meteor-accounts-persona"
     },
-    "moment": {},
-    "accounts-instagram": {}
+    "moment": {}
   }
 }
