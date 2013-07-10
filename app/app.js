@@ -6,11 +6,8 @@ if (Meteor.isClient) {
   Template.hello.events({
     'click .login' : function () {
       Meteor.loginWithPersona({}, function() {
-        console.log('logged in!');
+        // console.log('logged in!');
       });
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
     },
     'click .logout' : function () {
       Meteor.logout();
@@ -29,8 +26,7 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 
-  // Support for playing D&D: Roll 3d6 for dexterity
-  
+
   Accounts.onCreateUser(function(options, user) {
     console.log('creating user');
     console.log(user); 
