@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
   Template.hello.greeting = function () {
-    return "Welcome to app.";
+    return "Welcome to this app.";
   };
 
   Template.hello.events({
@@ -36,10 +36,6 @@ if (Meteor.isServer) {
     return user;
   });
 
-/*
-  Meteor.publish('users', function() {
-    return Meteor.users.find({});
-  });
-*/
+
 }
 
