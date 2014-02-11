@@ -18,4 +18,4 @@ Note: `smart.json` locally loads this module
 ```
 
 ## License
-Copyright 2013 Vlad Filippov :: Licensed under the MIT License.
+Copyright 2014 Vlad Filippov :: Licensed under the MIT License.
